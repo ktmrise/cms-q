@@ -192,7 +192,7 @@
         let ids  = this.multipleSelection.map((item)=>{
           return item.id;
         })
-        this.$confirm('此操作将永久删除该栏目，以及该栏目的子栏目以及该栏目下的文章信息, 是否继续?', '提示', {
+        this.$confirm('此操作将永久删除该文章，以及该文章还有及其所有评论, 是否继续?', '提示', {
           confirmButtonText: '确定',
           cancelButtonText: '取消',
           type: 'warning'

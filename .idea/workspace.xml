@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b6b1458-53e7-4cc9-9d25-bed13bf0d43a" name="Default Changelist" comment="first">
+    <list default="true" id="8b6b1458-53e7-4cc9-9d25-bed13bf0d43a" name="Default Changelist" comment="user basic conf">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Comment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Comment.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Article.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/setting/Info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/setting/Info.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +59,9 @@
       <option name="presentableId" value="Default" />
       <updated>1594961672157</updated>
       <workItem from="1594961673960" duration="19288000" />
-      <workItem from="1595031473018" duration="20430000" />
+      <workItem from="1595031473018" duration="20515000" />
+      <workItem from="1595072423583" duration="164000" />
+      <workItem from="1595072600482" duration="5897000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1595061224890</created>
@@ -70,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595061224890</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="user basic conf">
+      <created>1595064577820</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595064577820</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,10 +93,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="user basic conf" />
+    <option name="LAST_COMMIT_MESSAGE" value="user basic conf" />
   </component>
   <component name="WindowStateProjectService">
     <state x="510" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595060843172">
@@ -112,10 +121,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594961792549" />
-    <state x="270" y="57" key="SettingsEditor" timestamp="1595053913666">
+    <state x="270" y="57" key="SettingsEditor" timestamp="1595072589243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595053913666" />
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1595072589243" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595064601028">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595064601028" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595031984745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

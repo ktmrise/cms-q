@@ -10,12 +10,12 @@
 			<ul class="user_list">
 				<li v-for='u in users'>
 					<div class="icons">
-						<i class="fa fa-edit" @click="toUpdateUser(u.id)"></i>
+						<i class="fa fa-edit" @click="toUpdateUser(u)"></i>
 						<i class="fa fa-close" @click="deleteUser(u.id)"></i>
 					</div>
 					<div class="photo">
 						<img v-if='u.userFace && u.userFace.indexOf("http")>=0' :src="u.userFace" alt="">
-						<img v-else :src='us' alt="">
+<!--						<img v-else :src='s' alt="">-->
 					</div>
 					<div class="info">
 						<div>用户名</div> <div>{{u.username}}</div>
@@ -32,7 +32,7 @@
 		<!-- 数据区结束 -->
 		<!-- 模态框 -->
 		<el-dialog :title="userDialog.title" :visible.sync="userDialog.visible">
-			{{userDialog.form}}
+<!--			{{userDialog.form}}-->
 		  <el-form status-icon ref="userForm" :rules='rules' :model="userDialog.form" label-position='left' size='small'>
 		    <el-form-item label="用户名" label-width="100px" prop="username">
 		      <el-input v-model="userDialog.form.username" autocomplete="off"></el-input>
@@ -48,7 +48,7 @@
 		    </el-form-item>
 		    <el-form-item label="头像" label-width="100px">
 		      <el-upload
-					  action="http://47.107.71.18:8099/manager/file/upload"
+					  action="http://127.0.0.1:8099/manager/file/upload"
 					  :limit='1'
 					  :file-list="userDialog.fileList"
 					  :on-remove='handleUploadRemove'
@@ -57,6 +57,9 @@
 					  <el-button size="small" type="text">点击上传</el-button>
 					</el-upload>
 		    </el-form-item>
+<!--        <el-form-item label="头像" label-width="100px" prop="userFace">-->
+<!--          <el-input type="file" ref="myPhoto" ></el-input>-->
+<!--        </el-form-item>-->
 		  </el-form>
 		  <div slot="footer" class="dialog-footer">
 		    <el-button size='small' @click='closeUserDialog'>取 消</el-button>
@@ -153,6 +156,12 @@
 
 					if(valid){
 						let url = '/manager/user/saveOrUpdateUser'
+            // let formData = new FormData();
+            // formData.append('username', this.userDialog.form.username);
+            // formData.append('password', this.userDialog.form.password);
+            // formData.append('nickname', this.userDialog.form.nickname);
+            // formData.append('email', this.userDialog.form.email);
+            // formData.append('photo', this.$refs.myPhoto.files[0]);
 						axios.post(url,this.userDialog.form)
 						.then(({data:result})=>{
 							if(result.status = 200){
