@@ -41,7 +41,7 @@
 				//在登录前校验
 				this.$refs.userForm.validate((valid)=>{
 					if(valid){
-						axios.post('/login',this.form)
+						axios.post('/user/login',this.form)
 						.then(({data:result})=>{
 							console.log(result);
 							if(result.status == 200 && result.message=='登录成功'){
@@ -58,7 +58,7 @@
 				});
 
 
-				
+
 
 				//this.$root.currentComponent = 'App';
 			}

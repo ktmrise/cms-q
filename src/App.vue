@@ -6,19 +6,19 @@
         <i class="fa fa-tv"></i> &nbsp;&nbsp;看点咨询精选
       </div>
       <div class="info">
-        <img class="photo" :src="user.userface" alt="">
+        <img class="photo" :src="user.userFace" alt="">
         <div class="u">
-<el-dropdown @command='handleCommand'>
-  <span class="el-dropdown-link">
-    {{user.nickname}}<i class="el-icon-arrow-down el-icon--right"></i>
-  </span>
-  <el-dropdown-menu slot="dropdown">
-    <el-dropdown-item>个人中心</el-dropdown-item>
-    <el-dropdown-item command='logout'>退出</el-dropdown-item>
-  </el-dropdown-menu>
-</el-dropdown>
+          <el-dropdown @command='handleCommand' size='mini'>
+            <span class="el-dropdown-link">
+              {{user.username}}<i class="el-icon-arrow-down el-icon--right"></i>
+            </span>
+            <el-dropdown-menu slot="dropdown">
+              <el-dropdown-item>个人中心</el-dropdown-item>
+              <el-dropdown-item command='logout'>退出</el-dropdown-item>
+            </el-dropdown-menu>
+          </el-dropdown>
         </div>
-        
+
       </div>
     </div>
     <!-- 体 -->
@@ -41,9 +41,9 @@
             <router-link to='/article'>文章管理</router-link>
             <i class="fa fa-angle-right"></i>
           </li>
-          <li :class="{current:currentRoute=='/user'}">
+          <li :class="{current:currentRoute=='/comment'}">
             <i class="fa fa-tree"></i>
-            <router-link to='/user'>用户管理</router-link>
+            <router-link to='/comment'>评论管理</router-link>
             <i class="fa fa-angle-right"></i>
           </li>
           <li :class="{current:currentRoute.indexOf('/setting')>=0}">
@@ -92,7 +92,7 @@
     methods:{
       handleCommand(command){
         if(command == 'logout'){
-          axios.get('/logout').then(()=>{
+          axios.get('/user/logout').then(()=>{
             //跳转
             window.vm.currentComponent = 'Login';
             //清理localstorage中的user
@@ -105,7 +105,7 @@
 </script>
 <style>
   html {
-    font: normal normal 12px '微软雅黑','Microsoft YaHei';
+    font: normal normal 14px '微软雅黑','Microsoft YaHei';
     color: #666
   }
   input:-webkit-autofill {
@@ -126,8 +126,18 @@
   div {
     box-sizing: border-box;
   }
+  .el-dialog__header {
+    background: #ededed;
+  }
   .el-dialog__body {
     padding: 2em 2em 0 2em;
+  }
+  .el-upload-list--picture-card ,
+  .el-upload-list__item,
+  .el-upload--picture-card {
+    width: 68px;
+    height: 68px;
+    line-height: 68px;
   }
 
   .header {
@@ -135,8 +145,8 @@
     width: 100%;
     height: 60px;
     top: 0;
-    background-color: teal;   
-    padding: 0 1em; 
+    background-color: teal;
+    padding: 0 1em;
   }
   .header .title {
     color: #ffffff;
@@ -194,7 +204,7 @@
     right: 1em;
   }
   .center > .left-nav > ul > li i.fa:first-child {
-    left: 3em;
+    left: 2em;
   }
   .center > .left-nav > ul > li.current {
     background-color: #f0f0f0;
@@ -218,7 +228,16 @@
 
 
 
-
+  .btns {
+    margin-bottom: .5em;
+  }
+  i.fa {
+    margin: 0 .3em;
+    cursor: pointer;
+  }
+  i.fa.fa-trash {
+    color: #F56C6C;
+  }
 
 
 
