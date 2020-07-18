@@ -7,7 +7,7 @@
 		  	style="width:130px"
 		  	size="small"
 			  placeholder="请输入关键字"
-			  v-model="params.keywords"
+			  v-model="params.keyWords"
 			  clearable>
 			</el-input>
 
@@ -68,14 +68,14 @@
 				},
 				rules:{
 					title:[{
-						required: true, 
+						required: true,
 						message: '请输入标题',
-						trigger: 'blur' 
+						trigger: 'blur'
 					}],
 					categoryId:[{
-						required: true, 
+						required: true,
 						message: '请选择栏目',
-						trigger: 'change' 
+						trigger: 'change'
 					}]
 				}
 			}
@@ -94,14 +94,14 @@
 			this.findAllComments();
 		},
 		methods:{
-			
 
-			
+
+
 			handleSelectionChange(val){
 				this.multipleSelection = val;
 			},
-			
-			
+
+
 			// 查询所有栏目
 			findAllCategories(){
 				let url = '/manager/category/findAllCategory';

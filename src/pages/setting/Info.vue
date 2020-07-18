@@ -10,21 +10,21 @@
 			<ul class="user_list">
 				<li v-for='u in users'>
 					<div class="icons">
-						<i class="fa fa-edit" @click="toUpdateUser(u)"></i>
+						<i class="fa fa-edit" @click="toUpdateUser(u.id)"></i>
 						<i class="fa fa-close" @click="deleteUser(u.id)"></i>
 					</div>
 					<div class="photo">
-						<img v-if='u.userface && u.userface.indexOf("http")>=0' :src="u.userface" alt="">
-						<img v-else :src='"http://39.108.81.60:8888/group1/"+u.userface' alt="">
+						<img v-if='u.userFace && u.userFace.indexOf("http")>=0' :src="u.userFace" alt="">
+						<img v-else :src='us' alt="">
 					</div>
-					<div class="info"> 
+					<div class="info">
 						<div>用户名</div> <div>{{u.username}}</div>
 					</div>
-					<div class="info"> 
-						<div>真实姓名</div> <div>{{u.nickname}}</div> 
+					<div class="info">
+						<div>真实姓名</div> <div>{{u.nickname}}</div>
 					</div>
-					<div class="info"> 
-						<div>email</div> <div>{{u.email}}</div> 
+					<div class="info">
+						<div>email</div> <div>{{u.email}}</div>
 					</div>
 				</li>
 			</ul>
@@ -83,24 +83,24 @@
 				},
 				rules:{
 					username:[{
-						required: true, 
+						required: true,
 						message: '请输入用户名',
-						trigger: 'blur' 
+						trigger: 'blur'
 					}],
 					password:[{
-						required: true, 
+						required: true,
 						message: '请输入密码',
-						trigger: 'blur' 
+						trigger: 'blur'
 					}],
 					email:[{
-						required: true, 
+						required: true,
 						message: '请输入email',
-						trigger: 'blur' 
+						trigger: 'blur'
 					}],
 					nickname:[{
-						required: true, 
+						required: true,
 						message: '请输入真实姓名',
-						trigger: 'blur' 
+						trigger: 'blur'
 					}]
 				}
 			}
@@ -193,7 +193,7 @@
 					}
 				}
 
-				
+
 
 				this.userDialog.title = '修改用户';
 				this.userDialog.visible = true;
@@ -284,9 +284,9 @@
 	}
 	.user {
 		min-width: 800px;
-		
+
 	}
-	
+
 
 </style>
 

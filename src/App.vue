@@ -92,7 +92,7 @@
     methods:{
       handleCommand(command){
         if(command == 'logout'){
-          axios.get('/user/logout').then(()=>{
+          axios.get('/manager/user/logout').then(()=>{
             //跳转
             window.vm.currentComponent = 'Login';
             //清理localstorage中的user

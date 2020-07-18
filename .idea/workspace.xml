@@ -19,20 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b6b1458-53e7-4cc9-9d25-bed13bf0d43a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/webpack.dev.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    <list default="true" id="8b6b1458-53e7-4cc9-9d25-bed13bf0d43a" name="Default Changelist" comment="first">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/tx.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/tx.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/http/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/http/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Article.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Category.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/User.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Comment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Comment.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/setting/Info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/setting/Info.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/setting/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/setting/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +61,16 @@
       <option name="presentableId" value="Default" />
       <updated>1594961672157</updated>
       <workItem from="1594961673960" duration="19288000" />
-      <workItem from="1595031473018" duration="17491000" />
+      <workItem from="1595031473018" duration="20430000" />
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1595061224890</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595061224890</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +86,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
   <component name="WindowStateProjectService">
     <state x="510" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595060843172">
