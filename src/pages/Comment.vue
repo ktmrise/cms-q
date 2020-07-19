@@ -29,7 +29,7 @@
         <el-table-column label="操作" width='80' fixed="right" align='center'>
           <template slot-scope='{row}'>
             <i class="fa fa-trash" @click='deleteComment(row.id)'></i>
-            <i class="fa fa-pencil" @click='toUpdateComment(row)'></i>
+<!--            <i class="fa fa-pencil" @click='toUpdateComment(row)'></i>-->
           </template>
         </el-table-column>
       </el-table>

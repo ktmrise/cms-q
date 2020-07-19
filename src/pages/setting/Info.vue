@@ -53,6 +53,7 @@
 					  :file-list="userDialog.fileList"
 					  :on-remove='handleUploadRemove'
 					  :on-success='handlerUploadSuccess'
+            :http-request="uploadFile"
 					  list-type="picture">
 					  <el-button size="small" type="text">点击上传</el-button>
 					</el-upload>
@@ -112,11 +113,15 @@
 			this.findAllUsers();
 		},
 		methods:{
+      uploadFile() {
+        axios.post(file);
+      },
 			handleUploadRemove(){
 
 			},
 			handlerUploadSuccess(response){
-				this.userDialog.form.userface = response.data.id;
+        alert('111');
+				this.userDialog.form.userFace = response.data.data;
 			},
 			deleteUser(id){
 				this.$confirm('此操作将永久删除该数据, 是否继续?', '提示', {
