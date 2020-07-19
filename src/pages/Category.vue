@@ -120,8 +120,8 @@
 				this.categoryDialog.title = '修改栏目信息';
 				// 处理数据
 				let category = _.clone(row);
-				category.parentId = category.parent?category.parent.id:undefined;
-				delete category.parent;
+				// category.parentId = category.parent?category.parent.id:undefined;
+				// delete category.parent;
 				// 双向数据绑定
 				this.categoryDialog.form = category;
 				this.categoryDialog.visible = true;
@@ -160,7 +160,7 @@
         		let url = '/manager/category/saveOrUpdateCategory'
 						axios.post(url,this.categoryDialog.form)
 						.then(({data:result})=>{
-							if(result.status = 200){
+							if(result.status === 200){
 								//1. 关闭模态框
 								this.closeCategoryDialog();
 								//2. 提示成功

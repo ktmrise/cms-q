@@ -91,7 +91,7 @@
         total: 0,
         params: {
           page: 1,
-          pageSize: 10,
+          pageSize: 6,
         },
         articleDialog: {
           title: '',
@@ -152,27 +152,28 @@
         // 2. 克隆当前行数据（避免错误修改）
         let article = _.cloneDeep(row);
         // 3. 处理附件默认显示
-        this.articleDialog.fileList = article.articleFileVMs.map((item) => {
-          return {
-            name: item.cmsFile.id,
-            // url: 'http://134.175.154.93:8888/group1/' + item.cmsFile.id
-            url: 'http://134.175.154.93:8888/group1/' + item.cmsFile.id
-          }
-        })
+
+        // this.articleDialog.fileList = article.articleFileVMs.map((item) => {
+        //   return {
+        //     name: item.cmsFile.id,
+        //     // url: 'http://134.175.154.93:8888/group1/' + item.cmsFile.id
+        //     url: 'http://134.175.154.93:8888/group1/' + item.cmsFile.id
+        //   }
+        // })
         // 4. 处理表单数据
         // 4.1 依赖栏目 category - > categoryId
-        article.categoryId = article.category.id;
-        delete article.category;
-        // 4.2 依赖文件 articleFileVMs -> fileIds
-        article.fileIds = article.articleFileVMs.map(item => item.cmsFile.id);
-        delete article.articleFileVMs;
-        // 4.3 取消默认空值
-        for (let key in article) {
-          let val = article[key]
-          if (!val) {
-            delete article[key];
-          }
-        }
+        // article.categoryId = article.category.id;
+        // delete article.category;
+        // // 4.2 依赖文件 articleFileVMs -> fileIds
+        // article.fileIds = article.articleFileVMs.map(item => item.cmsFile.id);
+        // delete article.articleFileVMs;
+        // // 4.3 取消默认空值
+        // for (let key in article) {
+        //   let val = article[key]
+        //   if (!val) {
+        //     delete article[key];
+        //   }
+        // }
         //5 将处理后的结果与表单双向绑定
         this.articleDialog.form = article;
       },
@@ -250,11 +251,12 @@
             this.articleDialog.form.source = this.$refs.md.d_render;
             let url = '/manager/article/saveOrUpdateArticle';
             let item = localStorage.getItem('user');
-            let obj = JSON.parse(item);
-            this.articleDialog.form.author = obj.username;
+            let user = JSON.parse(item);
+            this.articleDialog.form.author = user.username;
+            this.articleDialog.form.createTime=
             axios.post(url, this.articleDialog.form)
               .then(({data: result}) => {
-                if (result.status == 200) {
+                if (result.status === 200) {
                   //1. 关闭模态框
                   this.closeArticleDialog();
                   //2. 提示成功

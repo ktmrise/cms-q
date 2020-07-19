@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b6b1458-53e7-4cc9-9d25-bed13bf0d43a" name="Default Changelist" comment="basic  finish">
+    <list default="true" id="8b6b1458-53e7-4cc9-9d25-bed13bf0d43a" name="Default Changelist" comment="fileupload  half">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Comment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Comment.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Article.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Category.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/setting/Info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/setting/Info.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +51,18 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="D:\webstorm\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -64,7 +78,8 @@
       <workItem from="1595072423583" duration="164000" />
       <workItem from="1595072600482" duration="5929000" />
       <workItem from="1595118806117" duration="10187000" />
-      <workItem from="1595140556984" duration="6291000" />
+      <workItem from="1595140556984" duration="7636000" />
+      <workItem from="1595159428058" duration="8205000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1595061224890</created>
@@ -101,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595145037111</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fileupload  half">
+      <created>1595148415995</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595148415995</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,13 +147,22 @@
     <MESSAGE value="user" />
     <MESSAGE value="comment  basic" />
     <MESSAGE value="basic  finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic  finish" />
+    <MESSAGE value="fileupload  half" />
+    <option name="LAST_COMMIT_MESSAGE" value="fileupload  half" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595159472344">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1595159472344" />
     <state x="510" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595060843172">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="510" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1595060843172" />
+    <state x="548" y="117" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1595159469024">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="117" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1595159469024" />
     <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1594961792549">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -156,10 +187,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="535" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1595144771263" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595145043321">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595148422684">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595145043321" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595148422684" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595031984745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
