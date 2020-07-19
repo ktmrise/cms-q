@@ -359,8 +359,8 @@
           type: 'warning'
         })
           .then(() => {
-            let url = '/manager/article/deleteArticleById';
-            axios.get(url, {id: id})
+            let url = '/manager/article/deleteArticleById?id='+id;
+            axios.get(url)
               .then(({data: result}) => {
                 this.$notify({
                   title: '成功',
