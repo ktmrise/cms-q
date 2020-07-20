@@ -164,9 +164,12 @@
 
           }
 
-        }).catch(function (error) {
-          alert(error);
-        })
+        }).catch(() => {
+          this.$notify.error({
+            title: '错误',
+            message: '删除异常'
+          });
+        });
       },
       batchDeleteComment() {
         let ids = this.multipleSelection.map((item) => {

@@ -178,7 +178,7 @@
 				        });
 							}
 						})
-						.catch((error)=>{
+						.catch(()=>{
 							this.$notify.error({
 				          title: '错误',
 				          message: '网络异常'
@@ -207,8 +207,12 @@
 				axios.get(url).then(({data:result})=>{
 					// 将查询到的数据绑定到模型中
 					this.categories = result.data;
-				}).catch((error)=>{
-					console.log('error',error);
+				}).catch(()=>{
+					// console.log('error',error);
+          this.$notify.error({
+            title: '错误',
+            message: '网络异常'
+          });
 				}).finally(()=>{
 					this.loading = false;
 				});
