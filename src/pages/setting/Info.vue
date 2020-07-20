@@ -51,7 +51,7 @@
         </el-form-item>
                 <el-form-item label="头像" label-width="100px">
 <!--                  <el-upload-->
-<!--                    -->
+
 <!--                    action="http://127.0.0.1:8099/manager/file/upload"-->
 <!--                    :limit='1'-->
 <!--                    :file-list="userDialog.fileList"-->
@@ -61,13 +61,16 @@
 <!--                    <el-button size="small" type="text">点击上传</el-button>-->
 <!--                  </el-upload>-->
                   <el-upload
-                    class="avatar-uploader"
+                    class="upload-demo"
                     action="http://127.0.0.1:8099/manager/file/upload"
-                    :show-file-list="false"
+                    :limit='1'
+                    :on-preview="handlePreview"
+                    :on-remove="handleRemove"
+                    :file-list="userDialog.fileList"
                     :on-success="handleAvatarSuccess"
-                    :before-upload="beforeAvatarUpload">
-                    <img v-if="imageUrl" :src="imageUrl" class="avatar">
-                    <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+                    list-type="picture">
+                    <el-button size="small" type="primary">点击上传</el-button>
+                    <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
                   </el-upload>
                 </el-form-item>
 
@@ -88,7 +91,6 @@
   export default {
     data() {
       return {
-        imageUrl: '',
         users: [],
         userDialog: {
           title: '',
@@ -124,12 +126,17 @@
       this.findAllUsers();
     },
     methods: {
+      handleRemove(file, fileList) {
+        console.log(file, fileList);
+      },
+      handlePreview(file) {
+        console.log(file);
+      },
 
 
 
-      // handleUploadRemove() {
-      //
-      // },
+
+
       // handlerUploadSuccess(response) {
       //   alert('111');
       //   this.userDialog.form.userFace = response.data.data;
@@ -238,22 +245,11 @@
         })
       },
       handleAvatarSuccess(res, file) {
-        alert(res);
-        this.imageUrl = URL.createObjectURL(file.raw);
-        // this.userDialog.form.userFace = res.data.data;
+        console.log(res);
+        // this.imageUrl = URL.createObjectURL(file.raw);
+        this.userDialog.form.userFace = res.data.data;
       },
-      beforeAvatarUpload(file) {
-        const isJPG = file.type === 'image/jpeg';
-        const isLt2M = file.size / 1024 / 1024 < 2;
 
-        if (!isJPG) {
-          this.$message.error('上传头像图片只能是 JPG 格式!');
-        }
-        if (!isLt2M) {
-          this.$message.error('上传头像图片大小不能超过 2MB!');
-        }
-        return isJPG && isLt2M;
-      }
     }
 
   }

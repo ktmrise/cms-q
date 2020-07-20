@@ -24,7 +24,7 @@
         <el-table-column type="selection" width="55" fixed></el-table-column>
         <el-table-column prop="content" label="评论内容"></el-table-column>
         <el-table-column prop="articleName" label="评论的文章"></el-table-column>
-        <el-table-column prop="status" label="状态" width="100" align='center'></el-table-column>
+<!--        <el-table-column prop="status" label="状态" width="100" align='center'></el-table-column>-->
         <el-table-column prop="createTime" label="评论时间" width="180" align='center'></el-table-column>
         <el-table-column label="操作" width='80' fixed="right" align='center'>
           <template slot-scope='{row}'>

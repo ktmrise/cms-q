@@ -9,6 +9,7 @@ import SettingInfo from '@/pages/setting/Info'
 import SettingAuth from '@/pages/setting/Auth'
 import SettingAdv from '@/pages/setting/Adv'
 import Test from '@/pages/Test'
+import Content from "../pages/Content";
 
 Vue.use(Router)
 
@@ -17,30 +18,33 @@ export default new Router({
     {
       path: '/test',
       component: Test
-    },{
+    }, {
       path: '/',
       component: HelloWorld
-    },{
+    }, {
+      path: '/content',
+      component: Content
+    }, {
       path: '/category',
       component: Category
-    },{
+    }, {
       path: '/article',
       component: Article
-    },{
+    }, {
       path: '/comment',
       component: Comment
-    },{
-      path:'/setting',
-      component:Setting,
-      children:[{
-        path:'info',  /* /setting/info -> SettingInfo */
-        component:SettingInfo
-      },{
-        path:'auth',  
-        component:SettingAuth
-      },{
-        path:'adv',  
-        component:SettingAdv
+    }, {
+      path: '/setting',
+      component: Setting,
+      children: [{
+        path: 'info',  /* /setting/info -> SettingInfo */
+        component: SettingInfo
+      }, {
+        path: 'auth',
+        component: SettingAuth
+      }, {
+        path: 'adv',
+        component: SettingAdv
       }]
     }
   ]

@@ -253,7 +253,7 @@
             let item = localStorage.getItem('user');
             let user = JSON.parse(item);
             this.articleDialog.form.author = user.username;
-            this.articleDialog.form.createTime=
+            // this.articleDialog.form.createTime=
             axios.post(url, this.articleDialog.form)
               .then(({data: result}) => {
                 if (result.status === 200) {

@@ -46,6 +46,11 @@
             <router-link to='/comment'>评论管理</router-link>
             <i class="fa fa-angle-right"></i>
           </li>
+          <li :class="{current:currentRoute=='/content'}">
+            <i class="fa fa-tree"></i>
+            <router-link to='/content'>文章内容</router-link>
+            <i class="fa fa-angle-right"></i>
+          </li>
           <li :class="{current:currentRoute.indexOf('/setting')>=0}">
             <i class="fa fa-cog"></i>
             <router-link to='/setting'>系统设置</router-link>

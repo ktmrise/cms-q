@@ -20,11 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6b1458-53e7-4cc9-9d25-bed13bf0d43a" name="Default Changelist" comment="fileupload  half">
+      <change afterPath="$PROJECT_DIR$/src/pages/Content.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Article.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Category.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Comment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Comment.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/setting/Info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/setting/Info.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +49,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="D:\webstorm\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\86134\Desktop\app04\src\pages" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="js.build_tools.npm">
@@ -79,7 +87,8 @@
       <workItem from="1595072600482" duration="5929000" />
       <workItem from="1595118806117" duration="10187000" />
       <workItem from="1595140556984" duration="7636000" />
-      <workItem from="1595159428058" duration="8205000" />
+      <workItem from="1595159428058" duration="8238000" />
+      <workItem from="1595204527550" duration="10298000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1595061224890</created>
@@ -123,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595148415995</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fileupload  half">
+      <created>1595168206716</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595168206716</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +179,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="117" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1595159469024" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1595208444183">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595208444183" />
     <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1594961792549">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -187,13 +207,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="535" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1595144771263" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595148422684">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595168216706">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595148422684" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595031984745">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595168216706" />
+    <state x="468" y="13" width="600" height="798" key="find.popup" timestamp="1595205280322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595031984745" />
+    <state x="468" y="13" width="600" height="798" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1595205280322" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1595209756013">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1595209756013" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595205267440">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595205267440" />
   </component>
 </project>
