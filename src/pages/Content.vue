@@ -3,7 +3,7 @@
     <div>
     <el-collapse v-model="activeNames" @change="handleChange">
 
-      <el-collapse-item v-for="(article,index) in articles" :title="article.title" :name="article.id">
+      <el-collapse-item v-for="(article,index) in articles" :title="article.title" :name="article.id" :key="index">
         <hr>
         作者:<span v-text="article.author"></span>
         <hr>

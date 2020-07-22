@@ -45,6 +45,7 @@
 						.then(({data:result})=>{
 							console.log(result);
 							if(result.status == 200 && result.message=='登录成功'){
+                console.log(result);
 								//1. 跳转到后台管理页面
 								window.vm.currentComponent = 'App';
 								//2. 将登录成功的用户信息保存到浏览器中
