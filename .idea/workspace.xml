@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6b1458-53e7-4cc9-9d25-bed13bf0d43a" name="Default Changelist" comment="only    fileUpload  bug">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Category.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Comment.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Comment.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
+    <property name="last_opened_file_path" value="D:/githubprojects/vue-element-admin-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="D:\webstorm\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -84,7 +83,13 @@
       <workItem from="1595140556984" duration="7636000" />
       <workItem from="1595159428058" duration="8238000" />
       <workItem from="1595204527550" duration="11250000" />
-      <workItem from="1595227932737" duration="1209000" />
+      <workItem from="1595227932737" duration="3059000" />
+      <workItem from="1595247109533" duration="1592000" />
+      <workItem from="1595293808818" duration="31000" />
+      <workItem from="1595295164932" duration="550000" />
+      <workItem from="1595339012897" duration="262000" />
+      <workItem from="1595378423485" duration="37000" />
+      <workItem from="1595383302835" duration="2077000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1595061224890</created>
@@ -142,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595215295228</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="only    fileUpload  bug">
+      <created>1595232326691</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1595232326691</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,10 +195,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="117" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1595159469024" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1595208444183">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1595378455653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595208444183" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595378455653" />
     <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1594961792549">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -211,10 +223,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="535" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1595144771263" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595215307875">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1595232334679">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595215307875" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1595232334679" />
     <state x="468" y="13" width="600" height="798" key="find.popup" timestamp="1595205280322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
