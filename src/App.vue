@@ -47,7 +47,7 @@
             <i class="fa fa-angle-right"></i>
           </li>
           <li :class="{current:currentRoute=='/content'}">
-            <i class="fa fa-tree"></i>
+            <i class="fa fa-adjust"></i>
             <router-link to='/content'>文章内容</router-link>
             <i class="fa fa-angle-right"></i>
           </li>
