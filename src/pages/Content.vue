@@ -39,6 +39,15 @@
         loading: false,
       }
     },
+    watch: {
+      // 只要params中的任意参数发生改变，就要刷新页面
+      params: {
+        handler: function () {
+          this.findAllArticles();
+        },
+        deep: true
+      }
+    },
     methods: {
       handleChange(val) {
         console.log(val);
