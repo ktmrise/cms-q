@@ -141,7 +141,7 @@
         })
           .then(() => {
             let url = '/manager/user/deleteUserById';
-            axios.get(url, {params: {id}})
+            axios.post(url, {id:id})
               .then(({data: result}) => {
                 this.$notify({
                   title: '成功',

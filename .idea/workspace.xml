@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8b6b1458-53e7-4cc9-9d25-bed13bf0d43a" name="Default Changelist" comment="finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Content.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Category.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/setting/Info.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/setting/Info.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../新建文件夹/app04" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="D:\webstorm\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -98,6 +99,11 @@
       <workItem from="1595489802181" duration="111000" />
       <workItem from="1595576040489" duration="24000" />
       <workItem from="1595576183075" duration="2128000" />
+      <workItem from="1595578431842" duration="317000" />
+      <workItem from="1595578948108" duration="1043000" />
+      <workItem from="1595638678753" duration="12000" />
+      <workItem from="1595678343211" duration="2061000" />
+      <workItem from="1595763917408" duration="3796000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1595061224890</created>
@@ -176,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595475849403</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finish">
+      <created>1595578538786</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1595578538786</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,10 +232,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="117" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1595159469024" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1595489911324">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1595638688932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595489911324" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595638688932" />
     <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1594961792549">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

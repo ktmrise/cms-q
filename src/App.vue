@@ -96,7 +96,7 @@
     },
     methods:{
       handleCommand(command){
-        if(command == 'logout'){
+        if(command === 'logout'){
           axios.get('/manager/user/logout').then(()=>{
             //跳转
             window.vm.currentComponent = 'Login';
